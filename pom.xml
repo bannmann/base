@@ -44,7 +44,7 @@
         <lombok.core.version>1.18.12</lombok.core.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <mizool.version>0.41</mizool.version>
+        <mizool.version>0.43</mizool.version>
         <mockito-core.version>3.3.3</mockito-core.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.30</slf4j.version>
