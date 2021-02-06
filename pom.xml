@@ -42,6 +42,7 @@
     <properties>
         <base.toolchains.jdk>11</base.toolchains.jdk>
         <lombok.core.version>1.18.12</lombok.core.version>
+        <lombok.plugin.version>${lombok.core.version}.0</lombok.plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <mizool.version>0.43</mizool.version>
@@ -262,6 +263,11 @@
                             </goals>
                         </execution>
                     </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok-maven-plugin</artifactId>
+                    <version>${lombok.plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
