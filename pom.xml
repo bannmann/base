@@ -156,6 +156,7 @@
                         <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
                         <useSnapshotInRelease>true</useSnapshotInRelease>
                         <preReleaseGoals>package -DperformRelease=true</preReleaseGoals>
+                        <pushRemote>true</pushRemote>
                         <commitMessagePrefix>[gitflow] </commitMessagePrefix>
                     </configuration>
                 </plugin>
