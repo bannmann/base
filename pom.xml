@@ -4,7 +4,7 @@
 
     <groupId>dev.bannmann</groupId>
     <artifactId>base</artifactId>
-    <version>1.4</version>
+    <version>1.5</version>
     <packaging>pom</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -151,13 +151,18 @@
                 <plugin>
                     <groupId>com.amashchenko.maven.plugin</groupId>
                     <artifactId>gitflow-maven-plugin</artifactId>
-                    <version>1.14.0</version>
+                    <version>1.20.0</version>
                     <configuration>
                         <commitDevelopmentVersionAtStart>true</commitDevelopmentVersionAtStart>
-                        <useSnapshotInRelease>true</useSnapshotInRelease>
+                        <commitMessagePrefix>[gitflow] </commitMessagePrefix>
+                        <gitFlowConfig>
+                            <productionBranch>main</productionBranch>
+                        </gitFlowConfig>
+                        <noBackMerge>true</noBackMerge>
+                        <noBackMergeHotfix>true</noBackMergeHotfix>
                         <preReleaseGoals>package -DperformRelease=true</preReleaseGoals>
                         <pushRemote>true</pushRemote>
-                        <commitMessagePrefix>[gitflow] </commitMessagePrefix>
+                        <useSnapshotInRelease>true</useSnapshotInRelease>
                     </configuration>
                 </plugin>
                 <plugin>
