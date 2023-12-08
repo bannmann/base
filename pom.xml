@@ -4,7 +4,7 @@
 
     <groupId>dev.bannmann</groupId>
     <artifactId>base</artifactId>
-    <version>1.5</version>
+    <version>1.6</version>
     <packaging>pom</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -41,14 +41,14 @@
 
     <properties>
         <base.toolchains.jdk>11</base.toolchains.jdk>
-        <lombok.core.version>1.18.12</lombok.core.version>
-        <lombok.plugin.version>${lombok.core.version}.0</lombok.plugin.version>
+        <lombok.core.version>1.18.30</lombok.core.version>
+        <lombok.plugin.version>1.18.20.0</lombok.plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <mizool.version>0.43</mizool.version>
+        <mizool.version>0.52</mizool.version>
         <mockito-core.version>3.3.3</mockito-core.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.30</slf4j.version>
+        <slf4j.version>2.0.9</slf4j.version>
         <testng.version>6.8.17</testng.version>
     </properties>
 
@@ -168,7 +168,7 @@
                 <plugin>
                     <groupId>com.github.ekryd.sortpom</groupId>
                     <artifactId>sortpom-maven-plugin</artifactId>
-                    <version>2.12.0</version>
+                    <version>3.3.0</version>
                     <configuration>
                         <encoding>${project.build.sourceEncoding}</encoding>
                         <predefinedSortOrder>recommended_2008_06</predefinedSortOrder>
@@ -186,22 +186,22 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-clean-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.3.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.11.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.0.0-M3</version>
+                    <version>3.4.1</version>
                     <executions>
                         <execution>
                             <id>enforce-maven</id>
@@ -211,7 +211,7 @@
                             <configuration>
                                 <rules>
                                     <requireMavenVersion>
-                                        <version>3.6.0</version>
+                                        <version>3.6.3</version>
                                     </requireMavenVersion>
                                 </rules>
                             </configuration>
@@ -221,32 +221,32 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>1.6</version>
+                    <version>3.1.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-install-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.6.3</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.9.1</version>
+                    <version>4.0.0-M12</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-toolchains-plugin</artifactId>
-                    <version>1.1</version>
+                    <version>3.1.0</version>
                     <configuration>
                         <toolchains>
                             <jdk>
