@@ -33,6 +33,7 @@
     </scm>
 
     <properties>
+        <base.central.deploymentName>${project.url} - ${project.version}</base.central.deploymentName>
         <base.toolchains.jdk>11</base.toolchains.jdk>
         <lombok.core.version>1.18.36</lombok.core.version>
         <lombok.plugin.version>1.18.20.0</lombok.plugin.version>
@@ -336,7 +337,7 @@
                     <extensions>true</extensions>
                     <configuration>
                         <autoPublish>true</autoPublish>
-                        <deploymentName>${project.groupId}:${project.artifactId}:${project.version}</deploymentName>
+                        <deploymentName>${base.central.deploymentName}</deploymentName>
                         <publishingServerId>central</publishingServerId>
                     </configuration>
                 </plugin>
